@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/reg_background"
+    tools:context=".LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/login_image"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/logo_two"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="fitCenter"
+                />
+
+            <EditText
+                android:id="@+id/login_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/login_image"
+                android:hint="Phone no"
+                android:inputType="phone"
+                android:padding="6dp"
+                android:drawableLeft="@drawable/phone"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+                android:textColorHint="@color/colorPrimaryDark"
+                />
+
+
+            <Button
+                android:id="@+id/login_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login_phone"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="250dp"
+                android:background="@color/colorPrimary"
+                android:text="Login"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:textColor="@android:color/background_light"
+                />
+
+            <EditText
+                android:id="@+id/login_otp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/login_button"
+                android:hint="Enter OTP"
+                android:inputType="phone"
+                android:padding="6dp"
+                android:drawableLeft="@drawable/phone"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+                android:textColorHint="@color/colorPrimaryDark"
+                />
+
+            <Button
+                android:id="@+id/login_otp_success"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login_otp"
+                android:padding="10dp"
+                android:layout_marginTop="6dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="250dp"
+                android:text="Verify"
+                android:textAllCaps="false"
+                android:background="@color/colorPrimary"
+                android:textSize="20sp"
+                android:textColor="@android:color/background_light"
+                />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

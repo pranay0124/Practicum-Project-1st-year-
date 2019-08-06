@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rainbow_bgd"
+    tools:context=".RoomChat">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/room_chat_recyclerList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_above="@+id/roomchat_mainll"/>
+
+    <LinearLayout
+        android:id="@+id/roomchat_mainll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/roomchat_message_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#BAE9E5"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_above="@+id/roomchat_findfile_linear_layout">
+
+            <ImageButton
+                android:id="@+id/roomchat_sendfiles_btn"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:src="@drawable/send_files"
+                android:layout_alignParentLeft="true"
+                android:backgroundTint="#BAE9E5"
+                />
+
+            <EditText
+                android:id="@+id/roomchat_typemessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:ems="10"
+                android:hint="Write a message"
+                android:inputType="text"
+                android:layout_margin="5dp"
+                android:background="@drawable/curved_border"
+                android:paddingHorizontal="10dp"
+                android:text="" />
+
+            <ImageButton
+                android:id="@+id/roomchat_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:padding="20dp"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/send_button"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/roomchat_findfile_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#BAE9E5"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true">
+
+            <ImageButton
+                android:id="@+id/roomchat_find_image"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="3"
+                android:backgroundTint="#BAE9E5"
+                android:scaleType="fitCenter"
+                android:src="@drawable/find_images_2" />
+
+            <ImageButton
+                android:id="@+id/roomchat_find_pdf"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="2"
+                android:backgroundTint="#BAE9E5"
+                android:scaleType="fitCenter"
+                android:src="@drawable/find_pdfs_1" />
+
+            <ImageButton
+                android:id="@+id/roomchat_find_doc"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="2"
+                android:backgroundTint="#BAE9E5"
+                android:scaleType="fitCenter"
+                android:src="@drawable/find_docs_1" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

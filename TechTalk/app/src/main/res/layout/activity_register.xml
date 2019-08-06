@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/reg_background"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:id="@+id/register_logo"
+        android:layout_width="180dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/techtips"/>
+
+    <EditText
+        android:id="@+id/register_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="13dp"
+        android:layout_below="@+id/register_logo"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="User name"
+        android:inputType="text"
+        android:textColor="#000000"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        />
+
+    <EditText
+        android:id="@+id/register_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_username"
+        android:padding="13dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="Phone number"
+        android:inputType="phone"
+        android:textColor="#000000"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"
+        />
+
+
+    <EditText
+        android:id="@+id/register_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_phone"
+        android:padding="13dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="6dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#000000"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        />
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/register_radioGroup"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_password"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true">
+
+        <RadioButton
+            android:id="@+id/register_srmentor_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="SrMentor"
+            />
+
+        <RadioButton
+            android:id="@+id/register_mentor_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Mentor"
+            />
+
+        <RadioButton
+            android:id="@+id/register_student_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Student"
+            />
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/register_submit_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/register_radioGroup"
+        android:layout_marginTop="18dp"
+        android:background="#01579B"
+        android:padding="15dp"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:text="Register"
+        android:textColor="#ffffff"
+        />
+
+</RelativeLayout>

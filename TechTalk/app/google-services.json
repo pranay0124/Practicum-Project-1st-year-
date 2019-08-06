@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "229208087443",
+    "firebase_url": "https://techtalk-5a3ae.firebaseio.com",
+    "project_id": "techtalk-5a3ae",
+    "storage_bucket": "techtalk-5a3ae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:229208087443:android:28aaacbdf3f8e996",
+        "android_client_info": {
+          "package_name": "com.example.techtalk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "229208087443-8n0dgd70fonorq2u1qi8d8uutgr1gqss.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.techtalk",
+            "certificate_hash": "5b87b7e13bade646461368cfd03ead2241865e5e"
+          }
+        },
+        {
+          "client_id": "229208087443-u699a70f92uknqufg0hojcgi7p2c2tcc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2MScgEavRmq-brnaA9J1AmqCP9kqXL7M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "229208087443-u699a70f92uknqufg0hojcgi7p2c2tcc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

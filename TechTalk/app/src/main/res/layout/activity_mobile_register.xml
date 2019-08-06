@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/reg_background"
+    tools:context=".MobileRegister">
+
+    <ImageView
+        android:id="@+id/mobileregister_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitStart"
+        android:src="@drawable/mobileregister_logo">
+    </ImageView>
+
+
+    <EditText
+        android:id="@+id/mobileregister_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mobileregister_logo"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="8dp"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Enter Code"
+        android:inputType="phone"
+        />
+
+    <Button
+        android:id="@+id/mobileregister_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mobileregister_code"
+        android:background="@color/colorPrimary"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Verify"
+        android:textColor="#ffffff"
+        />
+
+</RelativeLayout>
